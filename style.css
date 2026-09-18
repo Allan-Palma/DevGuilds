@@ -84,6 +84,19 @@ img {
     justify-content: space-between;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--branco);
+    font-size: 22px;
+    font-weight: bold;
+    white-space: nowrap;
+}
 
 .logo img {
     width: 125px;
