@@ -84,28 +84,36 @@ img {
     justify-content: space-between;
 }
 
+
+/* LOGO + NOME */
+
 .logo {
     display: flex;
     align-items: center;
+
     gap: 12px;
+
     text-decoration: none;
 }
 
-.logo span {
-    color: var(--branco);
-    font-size: 22px;
-    font-weight: bold;
-    white-space: nowrap;
-}
 
 .logo img {
-    width: 125px;
+    width: 85px;
     height: 55px;
 
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain;
 
     border-radius: 5px;
+}
+
+
+.logo span {
+    color: var(--branco);
+
+    font-size: 20px;
+    font-weight: bold;
+
+    white-space: nowrap;
 }
 
 
@@ -717,9 +725,21 @@ img {
     }
 
 
+    .logo {
+        gap: 8px;
+    }
+
+
     .logo img {
-        width: 105px;
-        height: 48px;
+        width: 65px;
+        height: 45px;
+
+        object-fit: contain;
+    }
+
+
+    .logo span {
+        font-size: 16px;
     }
 
 
@@ -890,6 +910,17 @@ img {
 ======================================== */
 
 @media (max-width: 400px) {
+
+    .logo img {
+        width: 55px;
+        height: 40px;
+    }
+
+
+    .logo span {
+        font-size: 14px;
+    }
+
 
     .inicio-texto h1 {
         font-size: 35px;
