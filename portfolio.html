@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Portfólio — Dev Guild’s, soluções digitais e tecnologia."
+      name="description"
+    />
+    <title>Portfólio | Dev Guild's</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img alt="Logo Dev Guild's" src="assets/logo-DevGuild's.png" />
+          <span class="marca-nome">
+            <span class="marca-dev"> Dev </span>
+            <span class="marca-guild">
+              Guild
+              <span class="marca-apostrofo"> ’ </span>
+              s
+            </span>
+            <small> DESENVOLVIMENTO DIGITAL </small>
+          </span>
+        </a>
+        <nav class="menu" id="menu">
+          <a href="index.html"> Início </a>
+          <a class="ativo" href="portfolio.html"> Portfólio </a>
+          <a href="avaliacoes.html"> Avaliações </a>
+          <a class="botao-contato" href="contato.html">
+            Contate-nos
+            <span> → </span>
+          </a>
+        </nav>
+        <button aria-label="Abrir menu" class="botao-menu" id="botaoMenu">
+          ☰
+        </button>
+      </div>
+    </header>
+    <main class="pagina-interna">
+      <section class="pagina-hero">
+        <div class="container">
+          <span class="destaque-pequeno"> PORTFÓLIO / DEV GUILD'S </span>
+          <h1>
+            Ideias que saem
+            <span> do papel. </span>
+          </h1>
+          <p>
+            Conheça os projetos que desenvolvemos e o que estamos preparando
+            para o futuro.
+          </p>
+          <div class="hero-indicadores">
+            <span> 03 projetos </span>
+            <span> 01 em planejamento </span>
+            <span> Novas ideias a caminho </span>
+          </div>
+        </div>
+      </section>
+      <section class="pagina-secao">
+        <div class="container">
+          <div class="secao-cabecalho">
+            <div>
+              <span class="destaque-pequeno"> NOSSO UNIVERSO </span>
+              <h2>Projetos em destaque</h2>
+            </div>
+            <p>
+              De experiências digitais a sistemas que simplificam o dia a dia.
+            </p>
+          </div>
+          <div class="cards-projetos">
+            <article class="cartao-projeto projeto-1">
+              <div class="projeto-topo">
+                <span class="etiqueta"> Em planejamento </span>
+                <span class="projeto-numero"> 01 </span>
+              </div>
+              <div aria-hidden="true" class="projeto-imagem">
+                <img
+                  alt="Logo da PetUp"
+                  loading="lazy"
+                  onerror="
+                    this.hidden = true;
+                    this.nextElementSibling.hidden = false;
+                  "
+                  src="assets/projetos/logo-petup.png"
+                />
+                <span class="projeto-placeholder" hidden="">
+                  Adicione a logo aqui
+                </span>
+              </div>
+              <p class="projeto-categoria">Marketplace · Pet</p>
+              <h2>PetUp</h2>
+              <h3>Marketplace de produtos para pets</h3>
+              <p>
+                Uma plataforma em planejamento para reunir alimentos,
+                brinquedos, acessórios e produtos de higiene para animais de
+                estimação.
+              </p>
+              <div class="projeto-rodape">
+                <span> PETUP </span>
+                <span class="projeto-indisponivel"> Em breve </span>
+              </div>
+            </article>
+            <article class="cartao-projeto projeto-2">
+              <div class="projeto-topo">
+                <span class="etiqueta"> Projeto desenvolvido </span>
+                <span class="projeto-numero"> 02 </span>
+              </div>
+              <div aria-hidden="true" class="projeto-imagem">
+                <img
+                  alt="Logo da Academia de Música"
+                  loading="lazy"
+                  src="assets/projetos/logo-AcademiaMusica.png"
+                />
+              </div>
+              <p class="projeto-categoria">Educação · Música</p>
+              <h2>Academia de Música</h2>
+              <h3>Um espaço digital para aprender música</h3>
+              <p>
+                Projeto desenvolvido para apresentar uma academia de música,
+                seus cursos e informações de forma clara e acessível.
+              </p>
+              <div class="projeto-rodape">
+                <span> ACADEMIA DE MÚSICA </span>
+                <div class="projeto-links">
+                  <a
+                    aria-label="Acessar o site da Academia de Música"
+                    class="projeto-link-principal"
+                    href="https://allan-palma.github.io/academiademusicaetec/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Ver site ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="cartao-projeto projeto-3">
+              <div class="projeto-topo">
+                <span class="etiqueta"> Projeto desenvolvido </span>
+                <span class="projeto-numero"> 03 </span>
+              </div>
+              <div aria-hidden="true" class="projeto-imagem">
+                <img
+                  alt="Logo do Café &amp; Sabor"
+                  loading="lazy"
+                  onerror="
+                    this.hidden = true;
+                    this.nextElementSibling.hidden = false;
+                  "
+                  src="assets/projetos/logo-cafe-sabor.png"
+                />
+                <span class="projeto-placeholder" hidden="">
+                  Adicione a logo aqui
+                </span>
+              </div>
+              <p class="projeto-categoria">Flask · Reservas</p>
+              <h2>Café &amp; Sabor</h2>
+              <h3>Reservas de mesas para cafeteria</h3>
+              <p>
+                Sistema de reservas de mesas com cadastro, login, seleção de
+                data e horário e gerenciamento das reservas pela equipe.
+              </p>
+              <div class="projeto-rodape">
+                <span> CAFÉ &amp; SABOR </span>
+                <div class="projeto-links">
+                  <a
+                    aria-label="Acessar o repositório do Café &amp; Sabor no GitHub"
+                    class="projeto-link-secundario"
+                    href="https://github.com/douglassud21/coffee-store"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Ver código no GitHub ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="projeto-convite">
+            <div>
+              <span class="destaque-pequeno"> PRÓXIMOS CAPÍTULOS </span>
+              <h2>Tem mais vindo por aí.</h2>
+              <p>Este portfólio cresce com cada novo desafio da equipe.</p>
+            </div>
+            <a class="botao-principal" href="contato.html">
+              Entre em contato
+              <span> ↗ </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+      <div class="container rodape-conteudo">
+        <div class="rodape-logo">
+          <img alt="Dev Guild's" src="assets/logo-DevGuild's.png" />
+          <p>Transformando ideias em soluções digitais.</p>
+        </div>
+      </div>
+      <div class="rodape-final">
+        <div class="container">
+          <p>
+            ©
+            <span id="ano"> </span>
+            Dev Guild's. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

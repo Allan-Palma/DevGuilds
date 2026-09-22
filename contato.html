@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Contato — Dev Guild’s, soluções digitais e tecnologia."
+      name="description"
+    />
+    <title>Contato | Dev Guild's</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img alt="Logo Dev Guild's" src="assets/logo-DevGuild's.png" />
+          <span class="marca-nome">
+            <span class="marca-dev"> Dev </span>
+            <span class="marca-guild">
+              Guild
+              <span class="marca-apostrofo"> ’ </span>
+              s
+            </span>
+            <small> DESENVOLVIMENTO DIGITAL </small>
+          </span>
+        </a>
+        <nav class="menu" id="menu">
+          <a href="index.html"> Início </a>
+          <a href="portfolio.html"> Portfólio </a>
+          <a href="avaliacoes.html"> Avaliações </a>
+          <a class="botao-contato ativo" href="contato.html">
+            Contate-nos
+            <span> → </span>
+          </a>
+        </nav>
+        <button aria-label="Abrir menu" class="botao-menu" id="botaoMenu">
+          ☰
+        </button>
+      </div>
+    </header>
+    <main class="pagina-interna">
+      <section class="pagina-hero">
+        <div class="container">
+          <span class="destaque-pequeno"> VAMOS CONVERSAR </span>
+          <h1>
+            Tem uma ideia?
+            <span> Fale com a gente. </span>
+          </h1>
+          <p>
+            Entre em contato com a Dev Guild's para conversar sobre nossos
+            projetos e conhecer melhor a equipe.
+          </p>
+        </div>
+      </section>
+      <section class="pagina-secao">
+        <div class="container contato-layout">
+          <div>
+            <h2>Envie sua mensagem</h2>
+            <p>
+              Preencha os campos e clique em copiar mensagem. Depois, envie o
+              texto pelo canal de contato informado pela equipe.
+            </p>
+            <p class="nota">
+              Este site é estático e não armazena mensagens ou dados do
+              formulário.
+            </p>
+          </div>
+          <form class="form-contato" id="formContato">
+            <label for="nome"> Seu nome </label>
+            <input
+              autocomplete="name"
+              id="nome"
+              maxlength="80"
+              name="nome"
+              placeholder="Como podemos chamar você?"
+              required=""
+            />
+            <label for="email"> Seu e-mail </label>
+            <input
+              autocomplete="email"
+              id="email"
+              maxlength="120"
+              name="email"
+              placeholder="voce@exemplo.com"
+              required=""
+              type="email"
+            />
+            <label for="assunto"> Assunto </label>
+            <input
+              id="assunto"
+              maxlength="100"
+              name="assunto"
+              placeholder="Sobre o que deseja conversar?"
+              required=""
+            />
+            <label for="mensagem"> Mensagem </label>
+            <textarea
+              id="mensagem"
+              maxlength="3000"
+              name="mensagem"
+              placeholder="Escreva sua mensagem..."
+              required=""
+              rows="6"
+            ></textarea>
+            <button class="botao-principal" type="submit">
+              Copiar mensagem
+              <span> → </span>
+            </button>
+            <p
+              aria-live="polite"
+              class="nota"
+              id="retornoContato"
+              role="status"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+      <div class="container rodape-conteudo">
+        <div class="rodape-logo">
+          <img alt="Dev Guild's" src="assets/logo-DevGuild's.png" />
+          <p>Transformando ideias em soluções digitais.</p>
+        </div>
+      </div>
+      <div class="rodape-final">
+        <div class="container">
+          <p>
+            ©
+            <span id="ano"> </span>
+            Dev Guild's. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

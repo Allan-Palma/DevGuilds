@@ -1,361 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Dev Guild's</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
     <!-- CABEÇALHO -->
     <header class="cabecalho">
-
-        <div class="container">
-
-            <a href="index.html" class="logo">
-                <img
-                    src="assets/logo-DevGuild's.png"
-                    alt="Logo Dev Guild's"
-                >
-                <span>Dev Guild's</span>
-            </a>
-
-            <nav class="menu" id="menu">
-
-                <a href="index.html" class="ativo">
-                    Início
-                </a>
-
-                <a href="#">
-                    Portfólio
-                </a>
-
-                <a href="#">
-                    Avaliações
-                </a>
-
-                <a href="#" class="botao-contato">
-                    Contate-nos
-                    <span>→</span>
-                </a>
-
-            </nav>
-
-            <button
-                class="botao-menu"
-                id="botaoMenu"
-                aria-label="Abrir menu"
-            >
-                ☰
-            </button>
-
-        </div>
-
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img alt="Logo Dev Guild's" src="assets/logo-DevGuild's.png" />
+          <span class="marca-nome">
+            <span class="marca-dev"> Dev </span>
+            <span class="marca-guild">
+              Guild
+              <span class="marca-apostrofo"> ’ </span>
+              s
+            </span>
+            <small> DESENVOLVIMENTO DIGITAL </small>
+          </span>
+        </a>
+        <nav class="menu" id="menu">
+          <a class="ativo" href="index.html"> Início </a>
+          <a href="portfolio.html"> Portfólio </a>
+          <a href="avaliacoes.html"> Avaliações </a>
+          <a class="botao-contato" href="contato.html">
+            Contate-nos
+            <span> → </span>
+          </a>
+        </nav>
+        <button aria-label="Abrir menu" class="botao-menu" id="botaoMenu">
+          ☰
+        </button>
+      </div>
     </header>
-
-
     <main>
-
-        <!-- APRESENTAÇÃO PRINCIPAL -->
-        <section class="inicio">
-
-            <div class="container inicio-conteudo">
-
-                <div class="inicio-texto">
-
-                    <span class="destaque-pequeno">
-                        IDEIAS • CÓDIGO • SOLUÇÕES
-                    </span>
-
-                    <h1>
-                        Transformando ideias em
-                        <span>soluções digitais.</span>
-                    </h1>
-
-                    <p>
-                        Na Dev Guild's, unimos tecnologia e criatividade
-                        para desenvolver soluções digitais que aproximam
-                        empresas e consumidores.
-                    </p>
-
-                    <a href="#tecnologias" class="botao-principal">
-                        Conheça nosso trabalho
-                        <span>→</span>
-                    </a>
-
-                </div>
-
-
-                <div class="inicio-imagem">
-
-                    <div class="imagem-detalhe"></div>
-
-                    <img
-                        src="assets/laptop.jpg"
-                        alt="Notebook representando desenvolvimento de tecnologia"
-                    >
-
-                </div>
-
+      <!-- APRESENTAÇÃO PRINCIPAL -->
+      <section class="inicio">
+        <div class="container inicio-conteudo">
+          <div class="inicio-texto">
+            <span class="destaque-pequeno"> IDEIAS • CÓDIGO • SOLUÇÕES </span>
+            <h1>
+              Transformando ideias em
+              <span> soluções digitais. </span>
+            </h1>
+            <p>
+              Na Dev Guild's, unimos tecnologia e criatividade para desenvolver
+              soluções digitais que aproximam empresas e consumidores.
+            </p>
+            <a class="botao-principal" href="portfolio.html">
+              Conheça nosso trabalho
+              <span> → </span>
+            </a>
+          </div>
+          <div class="inicio-imagem">
+            <div class="imagem-detalhe"></div>
+            <img
+              alt="Notebook representando desenvolvimento de tecnologia"
+              src="assets/laptop.jpg"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- TECNOLOGIAS -->
+      <section class="tecnologias" id="tecnologias">
+        <div class="container">
+          <div class="titulo-secao">
+            <span> TECNOLOGIAS </span>
+            <h2>Tecnologias usadas</h2>
+            <p>
+              Algumas das tecnologias utilizadas pela Dev Guild's no
+              desenvolvimento de projetos.
+            </p>
+          </div>
+          <div class="lista-tecnologias">
+            <div class="tecnologia">
+              <div class="icone-tecnologia">
+                <img alt="Java" src="assets/icons/java-icon.png" />
+              </div>
+              <p>Java</p>
             </div>
-
-        </section>
-
-
-        <!-- TECNOLOGIAS -->
-        <section class="tecnologias" id="tecnologias">
-
-            <div class="container">
-
-                <div class="titulo-secao">
-
-                    <span>
-                        TECNOLOGIAS
-                    </span>
-
-                    <h2>
-                        Tecnologias usadas
-                    </h2>
-
-                    <p>
-                        Algumas das tecnologias utilizadas pela
-                        Dev Guild's no desenvolvimento de projetos.
-                    </p>
-
-                </div>
-
-
-                <div class="lista-tecnologias">
-
-                    <div class="tecnologia">
-
-                        <div class="icone-tecnologia">
-                            <img
-                                src="assets/icons/java-icon.png"
-                                alt="Java"
-                            >
-                        </div>
-
-                        <p>Java</p>
-
-                    </div>
-
-
-                    <div class="tecnologia">
-
-                        <div class="icone-tecnologia">
-                            <img
-                                src="assets/icons/php-icon.png"
-                                alt="PHP"
-                            >
-                        </div>
-
-                        <p>PHP</p>
-
-                    </div>
-
-
-                    <div class="tecnologia">
-
-                        <div class="icone-tecnologia">
-                            <img
-                                src="assets/icons/python-icon.png"
-                                alt="Python"
-                            >
-                        </div>
-
-                        <p>Python</p>
-
-                    </div>
-
-
-                    <div class="tecnologia">
-
-                        <div class="icone-tecnologia">
-                            <img
-                                src="assets/icons/js-icon.png"
-                                alt="JavaScript"
-                            >
-                        </div>
-
-                        <p>JavaScript</p>
-
-                    </div>
-
-
-                    <div class="tecnologia">
-
-                        <div class="icone-tecnologia">
-                            <img
-                                src="assets/icons/html5-icon.png"
-                                alt="HTML5"
-                            >
-                        </div>
-
-                        <p>HTML5</p>
-
-                    </div>
-
-
-                    <div class="tecnologia">
-
-                        <div class="icone-tecnologia">
-                            <img
-                                src="assets/icons/css3-icon.png"
-                                alt="CSS3"
-                            >
-                        </div>
-
-                        <p>CSS3</p>
-
-                    </div>
-
-                </div>
-
+            <div class="tecnologia">
+              <div class="icone-tecnologia">
+                <img alt="PHP" src="assets/icons/php-icon.png" />
+              </div>
+              <p>PHP</p>
             </div>
-
-        </section>
-
-
-        <!-- SOBRE A DEV GUILD'S -->
-        <section class="sobre">
-
-            <div class="container sobre-conteudo">
-
-                <div class="sobre-logo">
-
-                    <div class="logo-fundo">
-
-                        <img
-                            src="assets/logo-DevGuild's.png"
-                            alt="Dev Guild's"
-                        >
-
-                    </div>
-
-                </div>
-
-
-                <div class="sobre-texto">
-
-                    <span class="destaque-pequeno">
-                        SOBRE NÓS
-                    </span>
-
-                    <h2>
-                        Mais que código,
-                        <span>somos uma guilda.</span>
-                    </h2>
-
-                    <p>
-                        A Dev Guild's surgiu da união de uma equipe
-                        interessada em tecnologia e desenvolvimento,
-                        com o objetivo de criar soluções que facilitem
-                        a conexão entre negócios e consumidores.
-                    </p>
-
-                    <p>
-                        O nome foi inspirado nas guildas dos jogos de
-                        RPG, onde pessoas se unem para realizar missões.
-                        Na nossa guilda, a missão é transformar ideias
-                        em soluções digitais.
-                    </p>
-
-                    <a href="#" class="link-sobre">
-                        Conheça a empresa
-                        <span>→</span>
-                    </a>
-
-                </div>
-
+            <div class="tecnologia">
+              <div class="icone-tecnologia">
+                <img alt="Python" src="assets/icons/python-icon.png" />
+              </div>
+              <p>Python</p>
             </div>
-
-        </section>
-
+            <div class="tecnologia">
+              <div class="icone-tecnologia">
+                <img alt="JavaScript" src="assets/icons/js-icon.png" />
+              </div>
+              <p>JavaScript</p>
+            </div>
+            <div class="tecnologia">
+              <div class="icone-tecnologia">
+                <img alt="HTML5" src="assets/icons/html5-icon.png" />
+              </div>
+              <p>HTML5</p>
+            </div>
+            <div class="tecnologia">
+              <div class="icone-tecnologia">
+                <img alt="CSS3" src="assets/icons/css3-icon.png" />
+              </div>
+              <p>CSS3</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SOBRE A DEV GUILD'S -->
+      <section class="sobre">
+        <div class="container sobre-conteudo">
+          <div class="sobre-logo">
+            <div class="logo-fundo">
+              <img alt="Dev Guild's" src="assets/logo-DevGuild's.png" />
+            </div>
+          </div>
+          <div class="sobre-texto">
+            <span class="destaque-pequeno"> SOBRE NÓS </span>
+            <h2>
+              Mais que código,
+              <span> somos uma guilda. </span>
+            </h2>
+            <p>
+              A Dev Guild's surgiu da união de uma equipe interessada em
+              tecnologia e desenvolvimento, com o objetivo de criar soluções que
+              facilitem a conexão entre negócios e consumidores.
+            </p>
+            <p>
+              O nome foi inspirado nas guildas dos jogos de RPG, onde pessoas se
+              unem para realizar missões. Na nossa guilda, a missão é
+              transformar ideias em soluções digitais.
+            </p>
+            <a class="link-sobre" href="sobre.html">
+              Conheça a empresa
+              <span> → </span>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
-
-
     <!-- RODAPÉ -->
     <footer class="rodape">
-
-        <div class="container rodape-conteudo">
-
-            <div class="rodape-logo">
-
-                <img
-                    src="assets/logo-DevGuild's.png"
-                    alt="Dev Guild's"
-                >
-
-                <p>
-                    Transformando ideias em soluções digitais.
-                </p>
-
-            </div>
-
-
-            <div class="redes-sociais">
-
-                <a href="#" aria-label="GitHub">
-                    <img
-                        src="assets/icons/github-icon.png"
-                        alt="GitHub"
-                    >
-                </a>
-
-                <a href="#" aria-label="LinkedIn">
-                    <img
-                        src="assets/icons/linkedin-icon.png"
-                        alt="LinkedIn"
-                    >
-                </a>
-
-                <a href="#" aria-label="WhatsApp">
-                    <img
-                        src="assets/icons/whatsapp-icon.png"
-                        alt="WhatsApp"
-                    >
-                </a>
-
-                <a href="#" aria-label="Discord">
-                    <img
-                        src="assets/icons/discord-icon.png"
-                        alt="Discord"
-                    >
-                </a>
-
-            </div>
-
+      <div class="container rodape-conteudo">
+        <div class="rodape-logo">
+          <img alt="Dev Guild's" src="assets/logo-DevGuild's.png" />
+          <p>Transformando ideias em soluções digitais.</p>
         </div>
-
-
-        <div class="rodape-final">
-
-            <div class="container">
-
-                <p>
-                    © <span id="ano"></span> Dev Guild's.
-                    Todos os direitos reservados.
-                </p>
-
-            </div>
-
+        <div class="redes-sociais">
+          <a aria-label="GitHub" href="#">
+            <img alt="GitHub" src="assets/icons/github-icon.png" />
+          </a>
+          <a aria-label="LinkedIn" href="#">
+            <img alt="LinkedIn" src="assets/icons/linkedin-icon.png" />
+          </a>
+          <a aria-label="WhatsApp" href="#">
+            <img alt="WhatsApp" src="assets/icons/whatsapp-icon.png" />
+          </a>
+          <a aria-label="Discord" href="#">
+            <img alt="Discord" src="assets/icons/discord-icon.png" />
+          </a>
         </div>
-
+      </div>
+      <div class="rodape-final">
+        <div class="container">
+          <p>
+            ©
+            <span id="ano"> </span>
+            Dev Guild's. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
     </footer>
-
-
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
