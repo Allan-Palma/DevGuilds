@@ -1436,3 +1436,712 @@ body {
     font-size: 13px;
     text-align: center;
 }
+
+/* ========================================
+   PÁGINA DE CONTATO - NOVO LAYOUT
+======================================== */
+
+
+/* ========================================
+   HERO DO CONTATO
+======================================== */
+
+.contato-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 90px 0;
+    border-bottom: 1px solid var(--borda);
+
+    background:
+        radial-gradient(
+            circle at 85% 30%,
+            rgba(245, 164, 109, 0.14),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #0b1a2c,
+            #07111f
+        );
+}
+
+.contato-hero-conteudo {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 70px;
+    align-items: center;
+}
+
+
+/* TEXTO DO HERO */
+
+.contato-hero-texto h1 {
+    max-width: 650px;
+    margin: 15px 0 20px;
+
+    font-size: clamp(44px, 5vw, 66px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.contato-hero-texto h1 span {
+    display: block;
+    color: var(--laranja-claro);
+}
+
+.contato-hero-texto > p {
+    max-width: 600px;
+
+    color: var(--cinza);
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+
+/* BENEFÍCIOS */
+
+.contato-beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+
+    margin-top: 35px;
+}
+
+.contato-beneficio {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    color: var(--cinza);
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.contato-beneficio strong {
+    display: block;
+    color: #dce6f2;
+}
+
+.beneficio-icone {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--laranja-claro);
+
+    border: 1px solid rgba(245, 164, 109, 0.35);
+    border-radius: 10px;
+
+    background: rgba(245, 164, 109, 0.08);
+
+    font-size: 19px;
+}
+
+
+/* ========================================
+   VISUAL DO HERO
+======================================== */
+
+.contato-hero-visual {
+    position: relative;
+
+    width: 100%;
+    max-width: 430px;
+    height: 290px;
+
+    margin-left: auto;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 28px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(42, 91, 145, 0.30),
+            transparent 60%
+        ),
+        rgba(255, 255, 255, 0.025);
+}
+
+.visual-centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 125px;
+    height: 125px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 28px;
+
+    color: var(--laranja-claro);
+
+    font-size: 36px;
+    font-weight: 900;
+
+    border: 1px solid rgba(245, 164, 109, 0.45);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(245, 164, 109, 0.14),
+            rgba(255, 255, 255, 0.02)
+        );
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.visual-codigo,
+.visual-ideia {
+    position: absolute;
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    background: #10243a;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.visual-codigo {
+    top: 30px;
+    right: 35px;
+
+    color: var(--laranja-claro);
+
+    border: 1px solid rgba(245, 164, 109, 0.45);
+}
+
+.visual-ideia {
+    bottom: 30px;
+    left: 35px;
+
+    color: #72b7ff;
+
+    border: 1px solid rgba(114, 183, 255, 0.4);
+}
+
+
+/* ========================================
+   SEÇÃO PRINCIPAL
+======================================== */
+
+.contato-secao {
+    padding: 95px 0 110px;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(36, 84, 137, 0.09),
+            transparent 35%
+        ),
+        #07111f;
+}
+
+.contato-novo-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 70px;
+    align-items: start;
+}
+
+
+/* ========================================
+   INFORMAÇÕES DO CONTATO
+======================================== */
+
+.contato-informacoes h2 {
+    max-width: 480px;
+
+    margin: 14px 0 20px;
+
+    font-size: clamp(36px, 4vw, 50px);
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.contato-informacoes h2 span {
+    color: var(--laranja-claro);
+}
+
+.contato-introducao {
+    max-width: 520px;
+
+    color: var(--cinza);
+
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+
+/* SERVIÇOS */
+
+.contato-servicos {
+    display: grid;
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.contato-servico {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 17px;
+
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+
+    background: linear-gradient(
+        120deg,
+        #102238,
+        #0c1b2d
+    );
+
+    transition:
+        transform 0.25s,
+        border-color 0.25s;
+}
+
+.contato-servico:hover {
+    transform: translateX(5px);
+
+    border-color: rgba(245, 164, 109, 0.4);
+}
+
+.servico-icone {
+    flex-shrink: 0;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    color: var(--laranja-claro);
+
+    background: rgba(245, 164, 109, 0.12);
+
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.servico-icone.azul {
+    color: #7abaff;
+
+    background: rgba(80, 153, 235, 0.12);
+}
+
+.contato-servico h3 {
+    margin-bottom: 4px;
+
+    color: var(--branco);
+
+    font-size: 15px;
+}
+
+.contato-servico p {
+    color: var(--cinza);
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   DESTAQUE
+======================================== */
+
+.contato-destaque {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+    margin-top: 14px;
+    padding: 20px;
+
+    border: 1px solid rgba(245, 164, 109, 0.42);
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(245, 164, 109, 0.18),
+            rgba(245, 164, 109, 0.06)
+        );
+}
+
+.contato-destaque-icone {
+    flex-shrink: 0;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    color: var(--laranja-claro);
+
+    background: rgba(245, 164, 109, 0.14);
+
+    font-size: 23px;
+}
+
+.contato-destaque h3 {
+    margin-bottom: 5px;
+
+    color: var(--laranja-claro);
+
+    font-size: 14px;
+}
+
+.contato-destaque p {
+    color: #d4deea;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   FORMULÁRIO
+======================================== */
+
+.form-contato-novo {
+    padding: 35px;
+
+    border: 1px solid rgba(151, 185, 222, 0.22);
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            150deg,
+            #10243a,
+            #0a1829
+        );
+
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+.form-titulo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 27px;
+}
+
+.form-titulo span {
+    color: var(--laranja-claro);
+
+    font-size: 24px;
+}
+
+.form-titulo h2 {
+    margin: 0;
+
+    font-size: 23px;
+}
+
+
+/* CAMPOS */
+
+.campo-contato {
+    display: grid;
+    gap: 8px;
+}
+
+.campo-contato + .campo-contato {
+    margin-top: 17px;
+}
+
+.campo-contato label {
+    color: var(--branco);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.form-contato-novo input,
+.form-contato-novo textarea {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    color: var(--branco);
+
+    border: 1px solid #344b66;
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #071525;
+
+    font: inherit;
+
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+}
+
+.form-contato-novo input::placeholder,
+.form-contato-novo textarea::placeholder {
+    color: #708096;
+}
+
+.form-contato-novo input:focus,
+.form-contato-novo textarea:focus {
+    border-color: var(--laranja);
+
+    box-shadow:
+        0 0 0 3px rgba(245, 164, 109, 0.08);
+}
+
+.form-contato-novo textarea {
+    resize: vertical;
+
+    min-height: 150px;
+}
+
+
+/* BOTÃO */
+
+.botao-email {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 22px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.form-aviso {
+    margin-top: 13px;
+
+    color: var(--cinza-escuro);
+
+    font-size: 11px;
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+/* ========================================
+   RODAPÉ COMPLETO
+======================================== */
+
+.rodape-completo {
+    padding-top: 55px;
+}
+
+.rodape-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        0.7fr
+        0.9fr
+        1fr;
+
+    gap: 55px;
+
+    padding-bottom: 50px;
+}
+
+.rodape-marca > p {
+    max-width: 280px;
+
+    margin-top: 20px;
+
+    color: var(--cinza);
+
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.rodape-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rodape-coluna h3 {
+    margin-bottom: 5px;
+
+    color: var(--branco);
+
+    font-size: 13px;
+}
+
+.rodape-coluna a {
+    color: var(--cinza);
+
+    font-size: 12px;
+
+    transition:
+        color 0.2s,
+        transform 0.2s;
+}
+
+.rodape-coluna a:hover {
+    color: var(--laranja-claro);
+
+    transform: translateX(3px);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .contato-hero-conteudo {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .contato-hero-visual {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .contato-novo-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .contato-informacoes {
+        max-width: 650px;
+    }
+
+    .rodape-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+}
+
+
+/* ========================================
+   CELULAR
+======================================== */
+
+@media (max-width: 700px) {
+
+    .contato-hero {
+        padding: 70px 0;
+    }
+
+    .contato-hero-texto h1 {
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+
+    .contato-beneficios {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contato-hero-visual {
+        height: 230px;
+    }
+
+    .visual-centro {
+        width: 100px;
+        height: 100px;
+
+        font-size: 29px;
+    }
+
+    .visual-codigo,
+    .visual-ideia {
+        width: 55px;
+        height: 55px;
+
+        font-size: 18px;
+    }
+
+    .contato-secao {
+        padding: 70px 0;
+    }
+
+    .contato-novo-layout {
+        gap: 40px;
+    }
+
+    .contato-informacoes h2 {
+        font-size: 36px;
+    }
+
+    .form-contato-novo {
+        padding: 24px 20px;
+    }
+
+    .rodape-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
+
+
+/* ========================================
+   CELULARES PEQUENOS
+======================================== */
+
+@media (max-width: 400px) {
+
+    .contato-hero-texto h1 {
+        font-size: 36px;
+    }
+
+    .contato-hero-visual {
+        height: 200px;
+    }
+
+    .contato-servico {
+        align-items: flex-start;
+    }
+
+    .servico-icone {
+        width: 45px;
+        height: 45px;
+    }
+
+    .contato-destaque {
+        align-items: flex-start;
+    }
+
+}
