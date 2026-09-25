@@ -2145,3 +2145,7 @@ body {
     }
 
 }
+
+body {
+    outline: 5px solid red !important;
+}
