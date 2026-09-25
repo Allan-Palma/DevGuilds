@@ -1,141 +1,624 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+<head>
+    <meta charset="utf-8">
+
     <meta
-      content="Contato — Dev Guild’s, soluções digitais e tecnologia."
-      name="description"
-    />
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Entre em contato com a Dev Guild's para projetos, sistemas e soluções digitais."
+    >
+
     <title>Contato | Dev Guild's</title>
-    <link href="style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- CABEÇALHO -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         CABEÇALHO
+    ========================================= -->
+
     <header class="cabecalho">
-      <div class="container">
-        <a class="logo" href="index.html">
-          <img alt="Logo Dev Guild's" src="assets/logo-DevGuild's.png" />
-          <span class="marca-nome">
-            <span class="marca-dev"> Dev </span>
-            <span class="marca-guild">
-              Guild
-              <span class="marca-apostrofo"> ’ </span>
-              s
-            </span>
-            <small> DESENVOLVIMENTO DIGITAL </small>
-          </span>
-        </a>
-        <nav class="menu" id="menu">
-          <a href="index.html"> Início </a>
-          <a href="portfolio.html"> Portfólio </a>
-          <a href="avaliacoes.html"> Avaliações </a>
-          <a class="botao-contato ativo" href="contato.html">
-            Contate-nos
-            <span> → </span>
-          </a>
-        </nav>
-        <button aria-label="Abrir menu" class="botao-menu" id="botaoMenu">
-          ☰
-        </button>
-      </div>
-    </header>
-    <main class="pagina-interna">
-      <section class="pagina-hero">
         <div class="container">
-          <span class="destaque-pequeno"> VAMOS CONVERSAR </span>
-          <h1>
-            Tem uma ideia?
-            <span> Fale com a gente. </span>
-          </h1>
-          <p>
-            Entre em contato com a Dev Guild's para conversar sobre nossos
-            projetos e conhecer melhor a equipe.
-          </p>
-        </div>
-      </section>
-      <section class="pagina-secao">
-        <div class="container contato-layout">
-          <div>
-            <h2>Envie sua mensagem</h2>
-            <p>
-              Preencha os campos e clique em copiar mensagem. Depois, envie o
-              texto pelo canal de contato informado pela equipe.
-            </p>
-            <p class="nota">
-              Este site é estático e não armazena mensagens ou dados do
-              formulário.
-            </p>
-          </div>
-          <form class="form-contato" id="formContato">
-            <label for="nome"> Seu nome </label>
-            <input
-              autocomplete="name"
-              id="nome"
-              maxlength="80"
-              name="nome"
-              placeholder="Como podemos chamar você?"
-              required=""
-            />
-            <label for="email"> Seu e-mail </label>
-            <input
-              autocomplete="email"
-              id="email"
-              maxlength="120"
-              name="email"
-              placeholder="voce@exemplo.com"
-              required=""
-              type="email"
-            />
-            <label for="assunto"> Assunto </label>
-            <input
-              id="assunto"
-              maxlength="100"
-              name="assunto"
-              placeholder="Sobre o que deseja conversar?"
-              required=""
-            />
-            <label for="mensagem"> Mensagem </label>
-            <textarea
-              id="mensagem"
-              maxlength="3000"
-              name="mensagem"
-              placeholder="Escreva sua mensagem..."
-              required=""
-              rows="6"
-            ></textarea>
-            <button class="botao-principal" type="submit">
-              Copiar mensagem
-              <span> → </span>
+
+            <a class="logo" href="index.html">
+
+                <img
+                    src="assets/logo-DevGuild's.png"
+                    alt="Logo Dev Guild's"
+                >
+
+                <span class="marca-nome">
+
+                    <span class="marca-dev">Dev</span>
+
+                    <span class="marca-guild">
+                        Guild<span class="marca-apostrofo">’</span>s
+                    </span>
+
+                    <small>DESENVOLVIMENTO DIGITAL</small>
+
+                </span>
+
+            </a>
+
+
+            <nav class="menu" id="menu">
+
+                <a href="index.html">
+                    Início
+                </a>
+
+                <a href="portfolio.html">
+                    Portfólio
+                </a>
+
+                <a href="avaliacoes.html">
+                    Avaliações
+                </a>
+
+                <a
+                    class="botao-contato ativo"
+                    href="contato.html"
+                >
+                    Contate-nos
+                    <span>→</span>
+                </a>
+
+            </nav>
+
+
+            <button
+                class="botao-menu"
+                id="botaoMenu"
+                aria-label="Abrir menu"
+            >
+                ☰
             </button>
-            <p
-              aria-live="polite"
-              class="nota"
-              id="retornoContato"
-              role="status"
-            ></p>
-          </form>
+
         </div>
-      </section>
+    </header>
+
+
+    <main class="pagina-interna">
+
+        <!-- ========================================
+             HERO
+        ========================================= -->
+
+        <section class="contato-hero">
+
+            <div class="container contato-hero-conteudo">
+
+                <div class="contato-hero-texto">
+
+                    <span class="destaque-pequeno">
+                        VAMOS CONVERSAR
+                    </span>
+
+                    <h1>
+                        Tem uma ideia?
+                        <span>Fale com a gente.</span>
+                    </h1>
+
+                    <p>
+                        Entre em contato com a Dev Guild's para
+                        conversar sobre nossos projetos, tirar dúvidas
+                        e conhecer melhor a equipe.
+                    </p>
+
+
+                    <div class="contato-beneficios">
+
+                        <div class="contato-beneficio">
+
+                            <span class="beneficio-icone">
+                                ✉
+                            </span>
+
+                            <span>
+                                Atendimento
+                                <strong>rápido</strong>
+                            </span>
+
+                        </div>
+
+
+                        <div class="contato-beneficio">
+
+                            <span class="beneficio-icone">
+                                ◇
+                            </span>
+
+                            <span>
+                                Equipe
+                                <strong>especializada</strong>
+                            </span>
+
+                        </div>
+
+
+                        <div class="contato-beneficio">
+
+                            <span class="beneficio-icone">
+                                ◉
+                            </span>
+
+                            <span>
+                                Vamos encontrar
+                                <strong>a melhor solução</strong>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DECORAÇÃO DO HERO -->
+
+                <div class="contato-hero-visual">
+
+                    <div class="visual-codigo">
+                        &lt;/&gt;
+                    </div>
+
+                    <div class="visual-centro">
+                        DG
+                    </div>
+
+                    <div class="visual-ideia">
+                        ✦
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             ÁREA DE CONTATO
+        ========================================= -->
+
+        <section class="contato-secao">
+
+            <div class="container contato-novo-layout">
+
+
+                <!-- LADO ESQUERDO -->
+
+                <div class="contato-informacoes">
+
+                    <span class="destaque-pequeno">
+                        ENTRE EM CONTATO
+                    </span>
+
+                    <h2>
+                        Vamos criar
+                        <span>algo juntos?</span>
+                    </h2>
+
+                    <p class="contato-introducao">
+                        Conte um pouco sobre a sua ideia e o que você
+                        precisa. Podemos ajudar com desenvolvimento de
+                        sites, sistemas personalizados ou até mesmo
+                        parcerias para novos projetos.
+                    </p>
+
+
+                    <div class="contato-servicos">
+
+
+                        <!-- PROJETOS WEB -->
+
+                        <div class="contato-servico">
+
+                            <div class="servico-icone">
+                                &lt;/&gt;
+                            </div>
+
+                            <div>
+                                <h3>Projetos Web</h3>
+
+                                <p>
+                                    Sites institucionais, portfólios
+                                    e páginas modernas e responsivas.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- SISTEMAS -->
+
+                        <div class="contato-servico">
+
+                            <div class="servico-icone azul">
+                                ⚙
+                            </div>
+
+                            <div>
+                                <h3>Sistemas Personalizados</h3>
+
+                                <p>
+                                    Soluções desenvolvidas de acordo
+                                    com as necessidades do projeto.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- PARCERIAS -->
+
+                        <div class="contato-servico">
+
+                            <div class="servico-icone">
+                                ◉
+                            </div>
+
+                            <div>
+                                <h3>Parcerias</h3>
+
+                                <p>
+                                    Novas ideias, projetos em conjunto
+                                    e oportunidades de colaboração.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DESTAQUE -->
+
+                    <div class="contato-destaque">
+
+                        <div class="contato-destaque-icone">
+                            ✦
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Conte sua ideia para a Dev Guild's
+                            </h3>
+
+                            <p>
+                                Estamos prontos para ouvir e transformar
+                                sua ideia em uma solução digital.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================
+                     FORMULÁRIO
+                ========================================= -->
+
+                <form
+                    class="form-contato form-contato-novo"
+                    id="formContato"
+                >
+
+                    <div class="form-titulo">
+
+                        <span>✉</span>
+
+                        <h2>
+                            Envie sua mensagem
+                        </h2>
+
+                    </div>
+
+
+                    <!-- NOME -->
+
+                    <div class="campo-contato">
+
+                        <label for="nome">
+                            Seu nome
+                        </label>
+
+                        <input
+                            id="nome"
+                            name="nome"
+                            type="text"
+                            maxlength="80"
+                            autocomplete="name"
+                            placeholder="Como podemos chamar você?"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- E-MAIL -->
+
+                    <div class="campo-contato">
+
+                        <label for="email">
+                            Seu e-mail
+                        </label>
+
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            maxlength="120"
+                            autocomplete="email"
+                            placeholder="voce@exemplo.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ASSUNTO -->
+
+                    <div class="campo-contato">
+
+                        <label for="assunto">
+                            Assunto
+                        </label>
+
+                        <input
+                            id="assunto"
+                            name="assunto"
+                            type="text"
+                            maxlength="100"
+                            placeholder="Sobre o que deseja conversar?"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- MENSAGEM -->
+
+                    <div class="campo-contato">
+
+                        <label for="mensagem">
+                            Mensagem
+                        </label>
+
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            maxlength="3000"
+                            rows="7"
+                            placeholder="Escreva sua mensagem..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        class="botao-principal botao-email"
+                        type="submit"
+                    >
+                        Enviar por e-mail
+                        <span>→</span>
+                    </button>
+
+
+                    <p class="form-aviso">
+                        Seu aplicativo de e-mail será aberto com
+                        a mensagem preenchida automaticamente.
+                    </p>
+
+
+                    <p
+                        class="nota"
+                        id="retornoContato"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
     </main>
-    <!-- RODAPÉ -->
-    <footer class="rodape">
-      <div class="container rodape-conteudo">
-        <div class="rodape-logo">
-          <img alt="Dev Guild's" src="assets/logo-DevGuild's.png" />
-          <p>Transformando ideias em soluções digitais.</p>
+
+
+    <!-- ========================================
+         RODAPÉ
+    ========================================= -->
+
+    <footer class="rodape rodape-completo">
+
+        <div class="container rodape-grid">
+
+
+            <!-- MARCA -->
+
+            <div class="rodape-marca">
+
+                <a class="logo" href="index.html">
+
+                    <img
+                        src="assets/logo-DevGuild's.png"
+                        alt="Dev Guild's"
+                    >
+
+                    <span class="marca-nome">
+
+                        <span class="marca-dev">Dev</span>
+
+                        <span class="marca-guild">
+                            Guild<span class="marca-apostrofo">’</span>s
+                        </span>
+
+                        <small>DESENVOLVIMENTO DIGITAL</small>
+
+                    </span>
+
+                </a>
+
+                <p>
+                    Transformando ideias em soluções digitais.
+                    Desenvolvimento, criatividade e tecnologia.
+                </p>
+
+            </div>
+
+
+            <!-- NAVEGAÇÃO -->
+
+            <div class="rodape-coluna">
+
+                <h3>Navegação</h3>
+
+                <a href="index.html">
+                    Início
+                </a>
+
+                <a href="portfolio.html">
+                    Portfólio
+                </a>
+
+                <a href="avaliacoes.html">
+                    Avaliações
+                </a>
+
+                <a href="contato.html">
+                    Contate-nos
+                </a>
+
+            </div>
+
+
+            <!-- PROJETOS -->
+
+            <div class="rodape-coluna">
+
+                <h3>Projetos</h3>
+
+                <a href="portfolio.html">
+                    PetUp
+                </a>
+
+                <a href="portfolio.html">
+                    Academia de Música
+                </a>
+
+                <a href="portfolio.html">
+                    Café & Sabor
+                </a>
+
+                <a href="portfolio.html">
+                    AutoHub
+                </a>
+
+            </div>
+
+
+            <!-- CONTATO -->
+
+            <div class="rodape-coluna">
+
+                <h3>Contato</h3>
+
+                <a href="mailto:devguils07@gmail.com">
+                    devguils07@gmail.com
+                </a>
+
+            </div>
+
         </div>
-      </div>
-      <div class="rodape-final">
-        <div class="container">
-          <p>
-            ©
-            <span id="ano"> </span>
-            Dev Guild's. Todos os direitos reservados.
-          </p>
+
+
+        <div class="rodape-final">
+
+            <div class="container">
+
+                <p>
+                    ©
+                    <span id="ano"></span>
+                    Dev Guild's. Todos os direitos reservados.
+                </p>
+
+            </div>
+
         </div>
-      </div>
+
     </footer>
+
+
     <script src="script.js"></script>
-  </body>
+
+
+    <!-- ========================================
+         ENVIO DO FORMULÁRIO POR E-MAIL
+    ========================================= -->
+
+    <script>
+
+        const formContato = document.getElementById("formContato");
+
+        formContato.addEventListener("submit", function (evento) {
+
+            evento.preventDefault();
+
+
+            const nome =
+                document.getElementById("nome").value.trim();
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const assunto =
+                document.getElementById("assunto").value.trim();
+
+            const mensagem =
+                document.getElementById("mensagem").value.trim();
+
+
+            const corpoEmail =
+`Olá, equipe Dev Guild's!
+
+Meu nome é ${nome}.
+
+E-mail para contato:
+${email}
+
+Mensagem:
+
+${mensagem}`;
+
+
+            const destino = "devguils07@gmail.com";
+
+
+            const linkEmail =
+                `mailto:${destino}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpoEmail)}`;
+
+
+            window.location.href = linkEmail;
+
+        });
+
+    </script>
+
+</body>
+
 </html>
